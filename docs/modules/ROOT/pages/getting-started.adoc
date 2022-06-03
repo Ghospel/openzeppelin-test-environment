@@ -89,7 +89,7 @@ const MyContract = contract.fromArtifact('MyContract');
 describe('MyContract', function () {
   const [ owner ] = accounts;
 
-  beforeEach(async function {
+  beforeEach(async function () {
     this.myContract = await MyContract.new({ from: owner });
   });
 
